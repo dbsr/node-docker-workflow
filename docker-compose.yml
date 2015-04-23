@@ -3,10 +3,4 @@ web:
   volumes:
     - "app:/src/app"
   ports:
-    - "80:3000"
-  links:
-   - redis
-redis:
-    build: ./redis
-    ports:
-        - "6379:6379"
+    - "3000:3000"
